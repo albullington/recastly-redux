@@ -9,6 +9,10 @@ class Search extends React.Component {
     };
   }
 
+  componentDidMount() {
+    this.props.handleSearchInputChange('redux');
+  }
+
   handleInputChange(e) {
     this.props.handleSearchInputChange(e.target.value);
     this.setState({
