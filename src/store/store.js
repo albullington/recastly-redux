@@ -8,4 +8,4 @@ const store = createStore(
   applyMiddleware(thunk)
 );
 
-module.exports.store = store;
+module.exports = store;
